@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@media print {
+  header,
+  footer,
+  button,
+  #btn-print-report,
+  #btn-export-csv,
+  input,
+  select {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    font-size: 11pt !important;
+  }
+
+  th, td {
+    border: 1px solid #cbd5e1 !important;
+    padding: 6px 8px !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
